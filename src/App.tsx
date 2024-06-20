@@ -1,6 +1,11 @@
 import React, { startTransition } from 'react';
 import { Route, BrowserRouter, Routes, useNavigate } from 'react-router-dom';
+import { Dashboard } from './screens';
+import { GlobalStyle } from './styles/global';
+import { Footer } from './components/footer';
 
+import { FiChevronRight } from "react-icons/fi";
+ 
 const Checkout = React.lazy( () => import("mfe/HomeMfe"));
 
 function Home() {
@@ -12,11 +17,20 @@ function Home() {
     })
   }
 
+  const buttonStyle = {
+    backgroundColor: 'transparent',
+    border: '0px',
+    marginLeft: '20px' 
+  }
+
   return (
     <div>
-      <button onClick={handle}>
-        Teste
+      <Dashboard/>
+      <GlobalStyle/>
+      <button onClick={handle} style={buttonStyle}>
+        <FiChevronRight size={50}/>
       </button>
+      <Footer/>
    </div>
   )
 }
