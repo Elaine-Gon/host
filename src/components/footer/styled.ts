@@ -7,6 +7,8 @@ export const Container = styled.footer`
     background-color: gray;
     color: white;
     font-size: 1.2rem;
+    position: fixed;
+    bottom: 0px;
 
     display: flex;
     align-items: center;

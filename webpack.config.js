@@ -17,16 +17,16 @@ module.exports = (env, argv) => {
     },
     resolve: {
       extensions: [".ts", ".tsx", ".js"],
-      alias: {
-        config$: './configs/app-config.js',
-        react: './vendor/react-master',
-      },
-      modules: [
-        'node_modules',
-        'bower_components',
-        'shared',
-        '/shared/vendor/modules',
-      ],
+      // alias: {
+      //   config$: './configs/app-config.js',
+      //   react: './vendor/react-master',
+      // },
+      // modules: [
+      //   'node_modules',
+      //   'bower_components',
+      //   'shared',
+      //   '/shared/vendor/modules',
+      // ],
     },
     module: {
       rules: [
@@ -35,23 +35,23 @@ module.exports = (env, argv) => {
           loader: "ts-loader",
           exclude: /node_modules/,
         },
-        {
-          test: /\.jsx?$/,
-          exclude: ['node_modules'],
-          use: ['babel-loader'],
-        },
-        {
-          test: /\.css$/,
-          use: ['style-loader', 'css-loader'],
-        },
-        {
-          test: /\.gif$/,
-          type: 'asset/inline',
-        },
-        {
-          test: /\.(ttf|eot|svg)$/,
-          type: 'asset/resource',
-        },
+        // {
+        //   test: /\.jsx?$/,
+        //   exclude: /node_modules/,
+        //   use: /babel-loader/,
+        // },
+        // {
+        //   test: /\.css$/,
+        //   use: ['style-loader', 'css-loader'],
+        // },
+        // {
+        //   test: /\.gif$/,
+        //   type: 'asset/inline',
+        // },
+        // {
+        //   test: /\.(ttf|eot|svg)$/,
+        //   type: 'asset/resource',
+        // },
       ],
     },
     

@@ -5,3 +5,9 @@ declare module "mfe/HomeMfe" {
 
     export default HomeApp;
 }
+
+declare module "mfe/DetailsMfe" {
+    const DetailMfe: React.ComponentType;
+
+    export default DetailMfe;
+}

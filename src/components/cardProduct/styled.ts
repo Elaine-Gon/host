@@ -32,7 +32,7 @@ export const Grid = styled.div`
   
   margin: 20px;
   display: grid;
-  grid-template-columns: repeat(4, 10rem);
+  grid-template-columns: repeat(5, 15rem);
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
   
@@ -47,12 +47,13 @@ export const Grid = styled.div`
   }
 `;
 
-export const Card = styled.div`
-    width: 200px;
-    height: 300px;
+export const Card = styled.button`
+    width: 250px;
+    height: 400px;
     padding: 30px 20px;
     border: 2px solid gray;
     border-radius: 2px 10px 2px 10px;
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
