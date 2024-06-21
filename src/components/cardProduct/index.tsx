@@ -45,9 +45,7 @@ export function CardProduct({onClick}: ButtonProps) {
     const [books, setBooks] = useState<IBook[]>([]);
 
     useEffect(() => {
-        // Simulando a busca de dados
         console.log('Fetching data...');
-        // Em vez de fetch, usamos a constante
         const fetchData = () => {
             console.log('Fetched data:', initialBooks); // Verificar os dados
             setBooks(initialBooks);
